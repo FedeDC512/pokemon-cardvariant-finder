@@ -1,0 +1,208 @@
+001  Sprigatito
+002  Fuecoco
+003  Quaxly
+004  Mimikyu ex
+005  Quaquaval
+006  Pawmot
+007  Hawlucha
+008  Revavroom
+009  Spidops
+010  Espathra
+011  Arcanine
+012  Dondozo
+013  Miraidon
+014  Koraidon
+015  Flaaffy
+016  Ampharos ex
+017  Lucario ex
+018  Cyclizar ex
+019  Baxcalibur
+020  Tinkaton
+021  Murkrow
+022  Pelipper
+023  Smoliv
+024  Growlithe
+025  Tinkatink
+026  Varoom
+027  Pikachu
+028  Miraidon ex
+029  Koraidon ex
+030  Chien-Pao ex
+031  Tinkaton ex
+032  Annihilape ex
+033  Meowscarada ex
+034  Skeledirge ex
+035  Quaquaval ex
+036  Palafin
+037  Cleffa
+038  Togekiss
+039  Mawile
+040  Pawmi
+041  Paldean Wooper
+042  Houndstone
+043  Eevee
+044  Charmander
+045  Paradise Resort
+046  Bulbasaur
+047  Charmander
+048  Squirtle
+049  Zapdos ex
+050  Alakazam ex
+051  Snorlax
+052  Mewtwo
+053  Mew ex
+054  Greninja ex
+055  Kangaskhan ex
+056  Charizard ex
+057  Chi-Yu
+058  Iron Bundle
+059  Xatu
+060  Aegislash
+061  Pineco
+062  Sinistea
+063  Cetitan
+064  Arctibax
+065  Scream Tail
+066  Iron Bundle
+067  Roaring Moon ex
+068  Iron Valiant ex
+069  Fidough
+070  Greavard
+071  Maschiff
+072  Great Tusk ex
+073  Iron Treads ex
+074  Charizard ex
+075  Mimikyu
+076  Sprigatito
+077  Floragato
+078  Meowscarada ex
+079  Fuecoco
+080  Crocalor
+081  Skeledirge ex
+082  Quaxly
+083  Quaxwell
+084  Quaquaval ex
+085  Pikachu with Grey Felt Hat
+086  Mabosstiff ex
+087  Sprigatito ex
+088  Pikachu
+089  Feraligatr
+090  Metang
+091  Koraidon
+092  Miraidon
+093  Carvanha
+094  Bellibolt
+095  Cleffa
+096  Cyclizar
+097  Flutter Mane
+098  Iron Thorns
+099  Shroodle
+100  Grafaiai ex
+101  Pikachu
+102  Oddish
+103  Houndoom ex
+104  Melmetal ex
+105  Armarouge ex
+106  Pikachu ex
+107  Mareep
+108  Flaaffy
+109  Ampharos
+110  Darkrai ex
+111  Pawniard
+112  Bisharp
+113  Kingambit
+114  Picknicker
+115  Thwackey
+116  Infernape
+117  Froslass
+118  Tatsugiri
+119  Toxel
+120  Pupitar
+121  Revavroom
+122  Snorlax
+123  Teal Mask Ogerpon
+124  Iono
+125  Armarouge ex
+126  Palafin ex
+127  Walking Wake ex
+128  Iron Leaves ex
+129  Pecharunt
+130  Kingambit
+131  Kingdra ex
+132  Greninja ex
+133  Ledian
+134  Crabominable
+135  Drifblim
+136  Bouffalant
+137  Horsea
+138  Porygon2
+139  Latias
+140  Tinkaton
+141  Noctowl
+142  Victini ex
+143  Miraidon ex
+144  Gouging Fire ex
+145  Raging Bolt ex
+146  Iron Crown ex
+147  Iron Boulder ex
+148  Miraidon
+149  Pecharunt
+150  Paradise Resort
+151  Gouging Fire
+152  Chien-Pao
+153  Magneton
+154  Indeedee
+155  Wooper
+156  Quagsire
+157  Zapdos
+158  Pachirisu
+159  Magneton
+160  Squawkabilly ex
+161  Charizard ex
+162  Houndstone ex
+163  Cinderace ex
+164  Lapras ex
+165  Terapagos ex
+166  Teal Mask Ogerpon ex
+167  Flareon
+168  Vaporeon
+169  Jolteon
+170  Leafeon
+171  Glaceon
+172  Sylveon
+173  Eevee
+174  Eevee ex
+177  Bloodmoon Ursaluna ex
+178  Kyogre ex
+179  Xerneas ex
+180  Dialga ex
+181  N's Darmanitan
+182  Iono's Kilowatrell
+183  Lillie's Ribombee
+184  Hop's Snorlax
+185  Yanma
+186  Scraggy
+187  Yanmega
+188  Scrafty
+189  N's Zorua
+190  Pikachu
+191  Sprigatito
+192  Fuecoco
+193  Hop's Zacian ex
+194  Iono's Bellibolt ex
+195  Lillie's Clefairy ex
+196  Charizard ex
+197  Koraidon ex
+198  Zacian ex
+199  Zarude
+200  Eevee
+201  Zebstrika
+202  Kangaskhan
+203  Team Rocket's Wobbuffet
+204  Cynthia's Garchomp ex
+205  Team Rocket's Mewtwo ex
+206  Marnie's Morpeko
+207  Steven's Beldum
+213  Feraligatr
+214  Pikachu
+215  Toxtricity ex

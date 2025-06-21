@@ -1,0 +1,230 @@
+001  Oddish
+002  Gloom
+003  Bellossom
+004  Scyther
+005  Shuckle
+006  Surskit
+007  Masquerain
+008  Combee
+009  Foongus
+010  Amoonguss
+011  Phantump
+012  Trevenant
+013  Rowlet
+014  Dartrix
+015  Decidueye ex
+016  Bounsweet
+017  Steenee
+018  Tsareena
+019  Smoliv
+020  Dolliv
+021  Arboliva
+022  Toedscruel ex
+023  Capsakid
+024  Capsakid
+025  Scovillain
+026  Charmander
+027  Charmeleon
+028  Vulpix
+029  Ninetales
+030  Entei
+031  Numel
+032  Camerupt
+033  Victini ex
+034  Darumaka
+035  Darmanitan
+036  Litwick
+037  Lampent
+038  Chandelure
+039  Heatmor
+040  Larvesta
+041  Volcarona
+042  Eiscue ex
+043  Charcadet
+044  Armarouge
+045  Lapras
+046  Carvanha
+047  Sharpedo
+048  Buizel
+049  Floatzel
+050  Tympole
+051  Palpitoad
+052  Seismitoad
+053  Cubchoo
+054  Beartic
+055  Cryogonal
+056  Froakie
+057  Frogadier
+058  Wiglett
+059  Wugtrio
+060  Finizen
+061  Finizen
+062  Palafin
+063  Magnemite
+064  Magneton
+065  Magnezone
+066  Tyranitar ex
+067  Tynamo
+068  Eelektrik
+069  Eelektross
+070  Thundurus
+071  Toxel
+072  Toxtricity
+073  Pawmot ex
+074  Tadbulb
+075  Tadbulb
+076  Tadbulb
+077  Bellibolt
+078  Bellibolt
+079  Miraidon ex
+080  Cleffa
+081  Clefairy
+082  Clefable ex
+083  Togepi
+084  Togetic
+085  Togekiss
+086  Espeon
+087  Snubbull
+088  Granbull
+089  Mawile
+090  Spoink
+091  Grumpig
+092  Lunatone
+093  Solrock
+094  Baltoy
+095  Claydol
+096  Vespiquen ex
+097  Sinistea
+098  Polteageist
+099  Greavard
+100  Greavard
+101  Houndstone
+102  Houndstone ex
+103  Diglett
+104  Dugtrio
+105  Larvitar
+106  Pupitar
+107  Nosepass
+108  Barboach
+109  Whiscash
+110  Bonsly
+111  Drilbur
+112  Stunfisk
+113  Diggersby
+114  Crabrawler
+115  Crabominable
+116  Rockruff
+117  Lycanroc
+118  Toedscool
+119  Toedscruel
+120  Klawf ex
+121  Glimmet
+122  Glimmet
+123  Glimmora ex
+124  Koraidon ex
+125  Charizard ex
+126  Paldean Wooper
+127  Paldean Wooper
+128  Paldean Clodsire
+129  Paldean Clodsire
+130  Umbreon
+131  Houndour
+132  Houndour
+133  Houndoom
+134  Houndoom ex
+135  Absol ex
+136  Darkrai
+137  Inkay
+138  Malamar
+139  Salandit
+140  Salazzle
+141  Scizor
+142  Skarmory
+143  Mawile
+144  Bronzor
+145  Bronzong
+146  Probopass
+147  Excadrill
+148  Pawniard
+149  Bisharp
+150  Kingambit
+151  Togedemaru
+152  Meltan
+153  Melmetal ex
+154  Varoom
+155  Varoom
+156  Revavroom ex
+157  Dratini
+158  Dragonair
+159  Dragonite ex
+160  Altaria
+161  Drampa
+162  Pidgey
+163  Pidgeotto
+164  Pidgeot ex
+165  Kangaskhan
+166  Eevee
+167  Zigzagoon
+168  Linoone
+169  Swablu
+170  Lillipup
+171  Herdier
+172  Stoutland
+173  Audino
+174  Bouffalant
+175  Bunnelby
+176  Yungoos
+177  Gumshoos
+178  Skwovet
+179  Greedent ex
+180  Lechonk
+181  Lechonk
+182  Lechonk
+183  Oinkologne
+184  Oinkologne
+185  Flamigo
+186  Arven
+187  Brassius
+188  Geeta
+189  Letter of Encouragement
+190  Ortega
+191  Patrol Cap
+192  Pokémon League Headquarters
+193  Poppy
+194  Ryme
+195  Team Star Grunt
+196  Town Store
+197  Vengeful Punch
+198  Gloom
+199  Ninetales
+200  Palafin
+201  Bellibolt
+202  Cleffa
+203  Larvitar
+204  Houndour
+205  Scizor
+206  Varoom
+207  Pidgey
+208  Pidgeotto
+209  Lechonk
+210  Eiscue ex
+211  Tyranitar ex
+212  Vespiquen ex
+213  Glimmora ex
+214  Absol ex
+215  Charizard ex
+216  Revavroom ex
+217  Pidgeot ex
+218  Geeta
+219  Ortega
+220  Poppy
+221  Ryme
+222  Eiscue ex
+223  Charizard ex
+224  Revavroom ex
+225  Pidgeot ex
+226  Geeta
+227  Poppy
+228  Charizard ex
+229  Artazon
+230  Basic Fire Energy

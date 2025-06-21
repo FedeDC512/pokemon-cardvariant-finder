@@ -1,0 +1,258 @@
+001  Pineco
+002  Heracross
+003  Shroomish
+004  Breloom
+005  Cacnea
+006  Cacturne
+007  Tropius
+008  Scatterbug
+009  Spewpa
+010  Vivillon
+011  Skiddo
+012  Gogoat
+013  Sprigatito
+014  Floragato
+015  Meowscarada
+016  Tarountula
+017  Tarountula
+018  Tarountula
+019  Spidops ex
+020  Smoliv
+021  Smoliv
+022  Dolliv
+023  Arboliva
+024  Toedscool
+025  Toedscool
+026  Toedscruel
+027  Capsakid
+028  Capsakid
+029  Scovillain
+030  Growlithe
+031  Growlithe
+032  Arcanine ex
+033  Houndour
+034  Houndoom
+035  Torkoal
+036  Fuecoco
+037  Crocalor
+038  Skeledirge
+039  Charcadet
+040  Charcadet
+041  Armarouge
+042  Slowpoke
+043  Slowbro
+044  Magikarp
+045  Gyarados ex
+046  Buizel
+047  Floatzel
+048  Alomomola
+049  Clauncher
+050  Clawitzer
+051  Bruxish
+052  Quaxly
+053  Quaxwell
+054  Quaquaval
+055  Wiglett
+056  Wiglett
+057  Wugtrio
+058  Cetoddle
+059  Cetoddle
+060  Cetitan
+061  Dondozo
+062  Tatsugiri
+063  Magnemite
+064  Magneton
+065  Magnezone ex
+066  Mareep
+067  Flaaffy
+068  Pachirisu
+069  Rotom
+070  Rotom
+071  Toxel
+072  Toxtricity
+073  Pawmi
+074  Pawmi
+075  Pawmo
+076  Pawmot
+077  Wattrel
+078  Wattrel
+079  Kilowattrel
+080  Miraidon
+081  Miraidon ex
+082  Drowzee
+083  Hypno
+084  Ralts
+085  Kirlia
+086  Gardevoir ex
+087  Shuppet
+088  Banette ex
+089  Drifloon
+090  Drifblim
+091  Flabébé
+092  Floette
+093  Florges
+094  Dedenne
+095  Dedenne
+096  Klefki
+097  Fidough
+098  Fidough
+099  Dachsbun
+100  Flittle
+101  Flittle
+102  Flittle
+103  Espathra
+104  Greavard
+105  Greavard
+106  Houndstone
+107  Mankey
+108  Primeape
+109  Annihilape
+110  Meditite
+111  Medicham
+112  Riolu
+113  Riolu
+114  Lucario
+115  Sandile
+116  Krokorok
+117  Krookodile
+118  Hawlucha
+119  Silicobra
+120  Sandaconda
+121  Stonjourner
+122  Klawf
+123  Great Tusk ex
+124  Koraidon
+125  Koraidon ex
+126  Grimer
+127  Muk
+128  Seviper
+129  Spiritomb
+130  Croagunk
+131  Toxicroak ex
+132  Pawniard
+133  Bisharp
+134  Kingambit
+135  Maschiff
+136  Maschiff
+137  Mabosstiff
+138  Bombirdier
+139  Forretress
+140  Varoom
+141  Varoom
+142  Revavroom
+143  Iron Treads ex
+144  Chansey
+145  Blissey
+146  Zangoose
+147  Zangoose
+148  Starly
+149  Staravia
+150  Staraptor
+151  Skwovet
+152  Greedent
+153  Indeedee
+154  Lechonk
+155  Lechonk
+156  Lechonk
+157  Oinkologne
+158  Oinkologne ex
+159  Tandemaus
+160  Tandemaus
+161  Maushold
+162  Squawkabilly
+163  Cyclizar
+164  Cyclizar
+165  Flamigo
+166  Arven
+167  Beach Court
+168  Crushing Hammer
+169  Defiance Band
+170  Electric Generator
+171  Energy Retrieval
+172  Energy Search
+173  Energy Switch
+174  Exp. Share
+175  Jacq
+176  Judge
+177  Katy
+178  Mesagoza
+179  Miriam
+180  Nemona
+181  Nest Ball
+182  Pal Pad
+183  Penny
+184  Picnic Basket
+185  Poké Ball
+186  Pokégear 3.0
+187  Pokémon Catcher
+188  Potion
+189  Professor's Research (Professor Sada)
+190  Professor's Research (Professor Turo)
+191  Rare Candy
+192  Rock Chestplate
+193  Rocky Helmet
+194  Switch
+195  Team Star Grunt
+196  Ultra Ball
+197  Vitality Band
+198  Youngster
+199  Tarountula
+200  Dolliv
+201  Toedscool
+202  Scovillain
+203  Armarouge
+204  Slowpoke
+205  Clauncher
+206  Wiglett
+207  Dondozo
+208  Pachirisu
+209  Pawmot
+210  Drowzee
+211  Ralts
+212  Kirlia
+213  Fidough
+214  Greavard
+215  Riolu
+216  Sandile
+217  Klawf
+218  Mabosstiff
+219  Bombirdier
+220  Kingambit
+221  Starly
+222  Skwovet
+223  Spidops ex
+224  Arcanine ex
+225  Gyarados ex
+226  Magnezone ex
+227  Miraidon ex
+228  Gardevoir ex
+229  Banette ex
+230  Great Tusk ex
+231  Koraidon ex
+232  Toxicroak ex
+233  Iron Treads ex
+234  Oinkologne ex
+235  Arven
+236  Jacq
+237  Katy
+238  Miriam
+239  Penny
+240  Professor's Research [Professor Sada]
+241  Professor's Research [Professor Turo]
+242  Team Star Grunt
+243  Spidops ex
+244  Miraidon ex
+245  Gardevoir ex
+246  Great Tusk ex
+247  Koraidon ex
+248  Iron Treads ex
+249  Arven
+250  Jacq
+251  Miriam
+252  Penny
+253  Miraidon ex
+254  Koraidon ex
+255  Nest Ball
+256  Rare Candy
+257  Basic Lightning Energy
+258  Basic Fighting Energy
