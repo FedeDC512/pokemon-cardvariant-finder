@@ -53,7 +53,7 @@ async function isDirectPage(url: string): Promise<boolean> {
       continue;
     }
 
-    // check if we got redirected
+    // check if got redirected
     if (res.url !== url) return false;
 
     const html = await res.text();
