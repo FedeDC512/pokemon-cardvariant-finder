@@ -5,9 +5,12 @@ const CARD_SETS_DIR = "./card-sets";
 const CHECKED_FILE = "./checked-cards.json";
 const VARIANTS_FILE = "./variants-found.json";
 
-type CheckedCards = Record<string, { status: "ok" | "no-variants" | "error"; variants: string[] }>;
-
-// ---- Utilities ----
+type CheckedEntry = {
+  status: "ok" | "no-variants" | "error";
+  variants: string[];
+  expansion?: string;
+};
+type CheckedCards = Record<string, CheckedEntry>;
 
 // Load JSON file or return default
 async function loadJson<T>(path: string, fallback: T): Promise<T> {
@@ -27,12 +30,18 @@ async function saveJson(path: string, data: any) {
 async function saveVariants(data: CheckedCards) {
   const variants = Object.entries(data)
     .filter(([_, v]) => v.variants.length > 0)
-    .map(([card, v]) => ({ card, variants: v.variants }));
+    .map(([card, v]) => ({
+      card,
+      expansion: v.expansion || "Unknown",
+      variants: v.variants
+    }));
   await saveJson(VARIANTS_FILE, variants);
 }
 
-// Delay utility
-const delay = (ms = 3000) => new Promise((res) => setTimeout(res, ms));
+// Simple delay to avoid rate limiting
+function randomDelay(min: number, max: number) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 // Check if a page exists
 async function isDirectPage(url: string): Promise<boolean> {
@@ -44,12 +53,12 @@ async function isDirectPage(url: string): Promise<boolean> {
 
     if (res.status === 429) {
       console.warn("⚠️ 429 Too Many Requests - waiting 60s...");
-      await delay(60000);
+      await Bun.sleep(60000);
       continue;
     }
     if (res.status === 403) {
       console.warn("⛔ 403 Forbidden - waiting 5min...");
-      await delay(300000);
+      await Bun.sleep(300000);
       continue;
     }
 
@@ -94,7 +103,7 @@ async function loadAllCards(): Promise<{ set: string; code: string; cards: strin
   return sets;
 }
 
-// ---- Main logic ----
+// Main scanning function
 async function scanCards(updateOnlyErrors = false) {
   const allSets = await loadAllCards();
   const checked = await loadJson<CheckedCards>(CHECKED_FILE, {});
@@ -110,19 +119,34 @@ async function scanCards(updateOnlyErrors = false) {
       try {
         const hasV1 = await isDirectPage(slugV1);
         if (!hasV1) {
-          checked[card] = { status: "no-variants", variants: [] };
-          console.log(`❌ No variants for ${card}`);
+          const baseSlug = `${BASE_URL}${set}/${card}`;
+          const hasBase = await isDirectPage(baseSlug);
+
+          if (!hasBase) {
+            console.error(`⛔ Base card not found for ${card}`);
+            checked[card] = { status: "error", variants: [] };
+          } else {
+            checked[card] = { status: "no-variants", variants: [] };
+            console.log(`❌ No variants for ${card}, but base exists`);
+          }
         } else {
           const variants: string[] = [slugV1];
+          
           for (let i = 2; i <= 5; i++) {
-            await delay();
+            await Bun.sleep(randomDelay(3000, 5000));
             const slugVi = slugV1.replace("-V1-", `-V${i}-`);
             if (await isDirectPage(slugVi)) {
               variants.push(slugVi);
               console.log(`✅ Variant found: ${slugVi}`);
             }
           }
-          checked[card] = { status: "ok", variants };
+          
+          if (variants.length === 1) {
+            console.log(`❌ Only V1 variant found`);
+          } else {
+            checked[card] = { status: "ok", variants, expansion: set.replace(/-/g, " ") };
+          }
+
         }
       } catch (err) {
         console.error(`⚠️ Error loading ${card}`, err);
@@ -131,15 +155,16 @@ async function scanCards(updateOnlyErrors = false) {
 
       await saveJson(CHECKED_FILE, checked);
       await saveVariants(checked);
-      await delay();
+      await Bun.sleep(randomDelay(3000, 5000));
     }
+    console.log(`\n✅ Finished scanning expansion: ${set.replace(/-/g, " ")}`);
   }
-  console.log("\n✅ Done. Variants saved in variants-found.json");
+  console.log("\n✅ Finished scanning all expansions");
 }
 
 // Simple menu with Bun’s prompt
 async function showMenu() {
-  console.log("\n=== Card Variant Scanner ===");
+  console.log("\nCard Variant Scanner");
   console.log("1) Scan all sets (keep cache)");
   console.log("2) Update only failed cards");
   console.log("3) Rescan all (clear cache)");
@@ -147,20 +172,18 @@ async function showMenu() {
   return Number(choice);
 }
 
-// Entry point
-(async function main() {
-  const choice = await showMenu();
-  if (choice === 1) {
-    await scanCards(false);
-  } else if (choice === 2) {
-    await scanCards(true);
-  } else if (choice === 3) {
-    // Clear cache files
-    await saveJson(CHECKED_FILE, {});
-    await saveJson(VARIANTS_FILE, []);
-    console.log("🗑 Cache cleared. Starting full rescan...");
-    await scanCards(false);
-  } else {
-    console.log("Invalid choice");
-  }
-})();
+// Main code
+const choice = await showMenu();
+if (choice === 1) {
+  await scanCards(false);
+} else if (choice === 2) {
+  await scanCards(true);
+} else if (choice === 3) {
+  // Clear cache files
+  await saveJson(CHECKED_FILE, {});
+  await saveJson(VARIANTS_FILE, []);
+  console.log("🗑️ Cache cleared. Starting full rescan...");
+  await scanCards(false);
+} else {
+  console.log("Invalid choice");
+}
