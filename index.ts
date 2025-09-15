@@ -126,12 +126,12 @@ async function scanCards(updateOnlyErrors = false) {
             console.error(`⛔ Base card not found for ${card}`);
             checked[card] = { status: "error", variants: [] };
           } else {
-            checked[card] = { status: "no-variants", variants: [] };
             console.log(`❌ No variants for ${card}, but base exists`);
+            checked[card] = { status: "no-variants", variants: [] };
           }
         } else {
           const variants: string[] = [slugV1];
-          
+
           for (let i = 2; i <= 5; i++) {
             await Bun.sleep(randomDelay(3000, 5000));
             const slugVi = slugV1.replace("-V1-", `-V${i}-`);
@@ -140,13 +140,8 @@ async function scanCards(updateOnlyErrors = false) {
               console.log(`✅ Variant found: ${slugVi}`);
             }
           }
-          
-          if (variants.length === 1) {
-            console.log(`❌ Only V1 variant found`);
-          } else {
-            checked[card] = { status: "ok", variants, expansion: set.replace(/-/g, " ") };
-          }
-
+          if (variants.length === 1) console.log(`❌ Only V1 variant found`);
+          checked[card] = { status: "ok", variants, expansion: set.replace(/-/g, " ") };
         }
       } catch (err) {
         console.error(`⚠️ Error loading ${card}`, err);
@@ -157,9 +152,9 @@ async function scanCards(updateOnlyErrors = false) {
       await saveVariants(checked);
       await Bun.sleep(randomDelay(3000, 5000));
     }
-    console.log(`\n✅ Finished scanning expansion: ${set.replace(/-/g, " ")}`);
+    console.log(`✅ Finished scanning expansion: ${set.replace(/-/g, " ")}\n`);
   }
-  console.log("\n✅ Finished scanning all expansions");
+  console.log("✅ Finished scanning all expansions");
 }
 
 // Simple menu with Bun’s prompt
