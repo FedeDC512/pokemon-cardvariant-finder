@@ -4,6 +4,7 @@ const BASE_URL = "https://www.cardmarket.com/en/Pokemon/Products/Singles/";
 const CARD_SETS_DIR = "./card-sets";
 const CHECKED_FILE = "./checked-cards.json";
 const VARIANTS_FILE = "./variants-found.json";
+const README_FILE = "./README.md";
 
 type CheckedEntry = {
   status: "ok" | "no-variants" | "error";
@@ -152,17 +153,67 @@ async function scanCards(updateOnlyErrors = false) {
       await saveVariants(checked);
       await Bun.sleep(randomDelay(3000, 5000));
     }
-    console.log(`✅ Finished scanning expansion: ${set.replace(/-/g, " ")}\n`);
+    console.log(`✅ Finished scanning expansion: ${set.replace(/-/g, " ")}`);
   }
   console.log("✅ Finished scanning all expansions");
 }
 
+// Generate README section
+async function updateReadme() {
+  const variants = await loadJson<any[]>(VARIANTS_FILE, []);
+  let readme = "";
+  try {
+    readme = await Bun.file(README_FILE).text();
+  } catch {
+    readme = "";
+  }
+
+  // Group variants by expansion
+  const grouped: Record<string, string[]> = {};
+  const expansionOrder: string[] = [];
+
+  for (const v of variants) {
+    if (v.variants.length <= 1) continue; // Skip v1 only cards
+    const parts = v.variants.slice(1).map((link: string) => {
+      const name = link.split("/").pop() || "";
+      return `[${name}](${link})`;
+    });
+
+    if (!grouped[v.expansion]) {
+      grouped[v.expansion] = [];
+      expansionOrder.push(v.expansion); // Keep track of order
+    }
+
+    grouped[v.expansion].push(`${v.card}: ${parts.join(", ")}`);
+  }
+
+  let section = "## Variants Found\n";
+  for (const expansion of expansionOrder) {
+    section += `\n### ${expansion}\n`;
+    section += grouped[expansion].map(c => `- ${c}`).join("\n") + "\n";
+  }
+
+  // Insert or replace section in README
+  const start = "<!-- VARIANTS_START -->";
+  const end = "<!-- VARIANTS_END -->";
+  const regex = new RegExp(`${start}[\\s\\S]*?${end}`, "m");
+  if (regex.test(readme)) {
+    readme = readme.replace(regex, `${start}\n${section}${end}`);
+  } else {
+    readme += `\n${start}\n${section}${end}\n`;
+  }
+
+  await Bun.write(README_FILE, readme);
+  console.log("📝 README updated with variants");
+}
+
 // Simple menu with Bun’s prompt
 async function showMenu() {
-  console.log("\nCard Variant Scanner");
+  console.log("Card Variant Scanner");
   console.log("1) Scan all sets (keep cache)");
   console.log("2) Update only failed cards");
   console.log("3) Rescan all (clear cache)");
+  console.log("4) Update README with variants");
   const choice = await prompt("Choose an option: ");
   return Number(choice);
 }
@@ -179,6 +230,8 @@ if (choice === 1) {
   await saveJson(VARIANTS_FILE, []);
   console.log("🗑️ Cache cleared. Starting full rescan...");
   await scanCards(false);
+} else if (choice === 4) {
+  await updateReadme();
 } else {
   console.log("Invalid choice");
 }
