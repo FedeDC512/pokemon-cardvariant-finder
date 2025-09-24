@@ -158,6 +158,67 @@ async function scanCards(updateOnlyErrors = false) {
   console.log("✅ Finished scanning all expansions");
 }
 
+// Check for V6 to V9 variants for cards that have V5
+async function checkV6toV9() {
+  const checked = await loadJson<CheckedCards>(CHECKED_FILE, {});
+  let modified = false;
+
+  for (const [card, entry] of Object.entries(checked)) {
+    if (entry.status !== "ok") continue;
+    if (!entry.variants.some(v => v.includes("-V5-"))) continue;
+    
+    const existingNumbers = new Set(
+      entry.variants
+        .map(v => {
+          const match = v.match(/-V(\d+)-/);
+          return match ? Number(match[1]) : null;
+        })
+        .filter((n): n is number => n !== null)
+    );
+
+    console.log(`🔍 Checking extra variants for ${card}...`);
+
+    let updated = false;
+    for (let i = 6; i <= 9; i++) {
+      if (existingNumbers.has(i)) continue;
+
+      await Bun.sleep(randomDelay(3000, 5000));
+      const slugV5 = entry.variants.find(v => v.includes("-V5-"));
+      if (!slugV5) continue;
+      const slugVi = slugV5.replace("-V5-", `-V${i}-`);
+
+      if (await isDirectPage(slugVi)) {
+        if (!entry.variants.includes(slugVi)) {
+          entry.variants.push(slugVi);
+          console.log(`✅ Extra variant found: ${slugVi}`);
+          updated = true;
+        }
+      }
+    }
+
+    if (updated) {
+      entry.variants.sort((a, b) => {
+        const numA = Number(a.match(/-V(\d+)-/)?.[1] ?? 0);
+        const numB = Number(b.match(/-V(\d+)-/)?.[1] ?? 0);
+        return numA - numB;
+      });
+
+      checked[card] = entry;
+      modified = true;
+    } else {
+      console.log(`❌ No new variants for ${card}`);
+    }
+  }
+
+  if (modified) {
+    await saveJson(CHECKED_FILE, checked);
+    await saveVariants(checked);
+    console.log("💾 Updated files with new variants");
+  } else {
+    console.log("ℹ️ No new variants found");
+  }
+}
+
 // Generate README section
 async function updateReadme() {
   const variants = await loadJson<any[]>(VARIANTS_FILE, []);
@@ -212,8 +273,9 @@ async function showMenu() {
   console.log("Card Variant Scanner");
   console.log("1) Scan all sets (keep cache)");
   console.log("2) Update only failed cards");
-  console.log("3) Rescan all (clear cache)");
+  console.log("3) Check for V6–V9 variants (for cards with V5)");
   console.log("4) Update README with variants");
+  console.log("9) Rescan all (clear cache)");
   const choice = await prompt("Choose an option: ");
   return Number(choice);
 }
@@ -225,13 +287,15 @@ if (choice === 1) {
 } else if (choice === 2) {
   await scanCards(true);
 } else if (choice === 3) {
+  await checkV6toV9();
+} else if (choice === 4) {
+  await updateReadme();
+} else if (choice === 9) {
   // Clear cache files
   await saveJson(CHECKED_FILE, {});
   await saveJson(VARIANTS_FILE, []);
   console.log("🗑️ Cache cleared. Starting full rescan...");
   await scanCards(false);
-} else if (choice === 4) {
-  await updateReadme();
 } else {
   console.log("Invalid choice");
 }
