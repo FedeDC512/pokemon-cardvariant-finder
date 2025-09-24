@@ -131,7 +131,7 @@ card list from https://www.pokellector.com/
 - Cetoddle-PAL053: [Cetoddle-V2-PAL053](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paldea-Evolved/Cetoddle-V2-PAL053)
 - Frigibax-PAL058: [Frigibax-V2-PAL058](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paldea-Evolved/Frigibax-V2-PAL058)
 - Baxcalibur-PAL060: [Baxcalibur-V3-PAL060](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paldea-Evolved/Baxcalibur-V3-PAL060), [Baxcalibur-V4-PAL060](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paldea-Evolved/Baxcalibur-V4-PAL060)
-- Chien-Pao-ex-PAL061: [Chien-Pao-ex-V5-PAL061](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paldea-Evolved/Chien-Pao-ex-V5-PAL061)
+- Chien-Pao-ex-PAL061: [Chien-Pao-ex-V5-PAL061](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paldea-Evolved/Chien-Pao-ex-V5-PAL061), [Chien-Pao-ex-V6-PAL061](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paldea-Evolved/Chien-Pao-ex-V6-PAL061)
 - Pikachu-PAL062: [Pikachu-V2-PAL062](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paldea-Evolved/Pikachu-V2-PAL062)
 - Pikachu-ex-PAL063: [Pikachu-ex-V2-PAL063](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paldea-Evolved/Pikachu-ex-V2-PAL063)
 - Luxray-PAL071: [Luxray-V2-PAL071](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paldea-Evolved/Luxray-V2-PAL071)
@@ -179,7 +179,7 @@ card list from https://www.pokellector.com/
 
 ### 151
 - Bulbasaur-MEW001: [Bulbasaur-V3-MEW001](https://www.cardmarket.com/en/Pokemon/Products/Singles/151/Bulbasaur-V3-MEW001), [Bulbasaur-V4-MEW001](https://www.cardmarket.com/en/Pokemon/Products/Singles/151/Bulbasaur-V4-MEW001)
-- Charmander-MEW004: [Charmander-V3-MEW004](https://www.cardmarket.com/en/Pokemon/Products/Singles/151/Charmander-V3-MEW004), [Charmander-V4-MEW004](https://www.cardmarket.com/en/Pokemon/Products/Singles/151/Charmander-V4-MEW004), [Charmander-V5-MEW004](https://www.cardmarket.com/en/Pokemon/Products/Singles/151/Charmander-V5-MEW004)
+- Charmander-MEW004: [Charmander-V3-MEW004](https://www.cardmarket.com/en/Pokemon/Products/Singles/151/Charmander-V3-MEW004), [Charmander-V4-MEW004](https://www.cardmarket.com/en/Pokemon/Products/Singles/151/Charmander-V4-MEW004), [Charmander-V5-MEW004](https://www.cardmarket.com/en/Pokemon/Products/Singles/151/Charmander-V5-MEW004), [Charmander-V6-MEW004](https://www.cardmarket.com/en/Pokemon/Products/Singles/151/Charmander-V6-MEW004)
 - Charmeleon-MEW005: [Charmeleon-V5-MEW005](https://www.cardmarket.com/en/Pokemon/Products/Singles/151/Charmeleon-V5-MEW005)
 - Squirtle-MEW007: [Squirtle-V3-MEW007](https://www.cardmarket.com/en/Pokemon/Products/Singles/151/Squirtle-V3-MEW007), [Squirtle-V4-MEW007](https://www.cardmarket.com/en/Pokemon/Products/Singles/151/Squirtle-V4-MEW007)
 - Blastoise-ex-MEW009: [Blastoise-ex-V2-MEW009](https://www.cardmarket.com/en/Pokemon/Products/Singles/151/Blastoise-ex-V2-MEW009)
@@ -193,7 +193,7 @@ card list from https://www.pokellector.com/
 
 ### Paradox Rift
 - Charcadet-PAR026: [Charcadet-V2-PAR026](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paradox-Rift/Charcadet-V2-PAR026)
-- Iron-Moth-PAR028: [Iron-Moth-V3-PAR028](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paradox-Rift/Iron-Moth-V3-PAR028), [Iron-Moth-V4-PAR028](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paradox-Rift/Iron-Moth-V4-PAR028), [Iron-Moth-V5-PAR028](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paradox-Rift/Iron-Moth-V5-PAR028)
+- Iron-Moth-PAR028: [Iron-Moth-V3-PAR028](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paradox-Rift/Iron-Moth-V3-PAR028), [Iron-Moth-V4-PAR028](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paradox-Rift/Iron-Moth-V4-PAR028), [Iron-Moth-V5-PAR028](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paradox-Rift/Iron-Moth-V5-PAR028), [Iron-Moth-V6-PAR028](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paradox-Rift/Iron-Moth-V6-PAR028), [Iron-Moth-V7-PAR028](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paradox-Rift/Iron-Moth-V7-PAR028)
 - Chi-Yu-PAR029: [Chi-Yu-V2-PAR029](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paradox-Rift/Chi-Yu-V2-PAR029)
 - Kingdra-PAR032: [Kingdra-V2-PAR032](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paradox-Rift/Kingdra-V2-PAR032)
 - Snorunt-PAR037: [Snorunt-V3-PAR037](https://www.cardmarket.com/en/Pokemon/Products/Singles/Paradox-Rift/Snorunt-V3-PAR037)
@@ -238,9 +238,9 @@ card list from https://www.pokellector.com/
 - Iron-Valiant-TEF079: [Iron-Valiant-V2-TEF079](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Iron-Valiant-V2-TEF079)
 - Iron-Crown-ex-TEF081: [Iron-Crown-ex-V5-TEF081](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Iron-Crown-ex-V5-TEF081)
 - Relicanth-TEF084: [Relicanth-V3-TEF084](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Relicanth-V3-TEF084)
-- Koraidon-TEF119: [Koraidon-V2-TEF119](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Koraidon-V2-TEF119), [Koraidon-V3-TEF119](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Koraidon-V3-TEF119), [Koraidon-V4-TEF119](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Koraidon-V4-TEF119), [Koraidon-V5-TEF119](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Koraidon-V5-TEF119)
+- Koraidon-TEF119: [Koraidon-V2-TEF119](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Koraidon-V2-TEF119), [Koraidon-V3-TEF119](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Koraidon-V3-TEF119), [Koraidon-V4-TEF119](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Koraidon-V4-TEF119), [Koraidon-V5-TEF119](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Koraidon-V5-TEF119), [Koraidon-V6-TEF119](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Koraidon-V6-TEF119)
 - Miraidon-TEF121: [Miraidon-V2-TEF121](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Miraidon-V2-TEF121), [Miraidon-V3-TEF121](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Miraidon-V3-TEF121), [Miraidon-V4-TEF121](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Miraidon-V4-TEF121)
-- Raging-Bolt-ex-TEF123: [Raging-Bolt-ex-V5-TEF123](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Raging-Bolt-ex-V5-TEF123)
+- Raging-Bolt-ex-TEF123: [Raging-Bolt-ex-V5-TEF123](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Raging-Bolt-ex-V5-TEF123), [Raging-Bolt-ex-V6-TEF123](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Raging-Bolt-ex-V6-TEF123)
 - Hoothoot-TEF126: [Hoothoot-V2-TEF126](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Hoothoot-V2-TEF126)
 - Noctowl-TEF127: [Noctowl-V2-TEF127](https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Noctowl-V2-TEF127)
 
@@ -281,7 +281,7 @@ card list from https://www.pokellector.com/
 - Meltan-SCR102: [Meltan-V2-SCR102](https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Meltan-V2-SCR102)
 - Melmetal-SCR104: [Melmetal-V2-SCR104](https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Melmetal-V2-SCR104)
 - Melmetal-ex-SCR105: [Melmetal-ex-V2-SCR105](https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Melmetal-ex-V2-SCR105), [Melmetal-ex-V3-SCR105](https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Melmetal-ex-V3-SCR105)
-- Archaludon-SCR107: [Archaludon-V3-SCR107](https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Archaludon-V3-SCR107), [Archaludon-V4-SCR107](https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Archaludon-V4-SCR107), [Archaludon-V5-SCR107](https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Archaludon-V5-SCR107)
+- Archaludon-SCR107: [Archaludon-V3-SCR107](https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Archaludon-V3-SCR107), [Archaludon-V4-SCR107](https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Archaludon-V4-SCR107), [Archaludon-V5-SCR107](https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Archaludon-V5-SCR107), [Archaludon-V6-SCR107](https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Archaludon-V6-SCR107)
 - Raging-Bolt-SCR111: [Raging-Bolt-V2-SCR111](https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Raging-Bolt-V2-SCR111)
 - Bouffalant-SCR119: [Bouffalant-V2-SCR119](https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Bouffalant-V2-SCR119)
 - Terapagos-ex-SCR128: [Terapagos-ex-V5-SCR128](https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Terapagos-ex-V5-SCR128)
