@@ -8,17 +8,20 @@ At the end of this README you will find **all the Variants Found with links**, g
 ## ✨ Why I created this
 
 I made this program to automate the search for alternative Pokémon card variants, since checking them manually is time-consuming.
-With this tool, I can scan all expansions quickly, update only errors, and always keep a list of variants up to date.
+
+A **variant** is a card that differs visually or in special attributes from the original, but keeps the same expansion number. For example, a variant could be a card with a different holo effect found in a collection, or a special stamped version distributed separately.
+
+At the moment, the only way I found to know if a card has an alternate form is by checking its **Cardmarket** link and seeing if there is a version number higher than V1.
+
+With this tool, I can quickly scan all expansions, update only cards that had errors in previous scans, and always maintain an up-to-date list of discovered variants.
 
 ## 🚀 How to run
 
 1. Install [Bun](https://bun.sh) if you don’t have it already.
-
 2. Run the program:
    ```bash
    bun start
    ```
-
 3. Use the menu to choose what you want to do:
    * Full scan
    * Retry failed cards
@@ -32,21 +35,17 @@ The program combines **Pokellector expansions** (already stored in the repo) wit
 1. **Load expansions** → read JSON files exported from Pokellector.
 2. **Generate slugs** → format each card into a Cardmarket-compatible slug.
 3. **Check variants** →
-
    * Try `V1` first.
    * If `V1` doesn’t exist, check the **base card**.
-
      * Missing base card → mark as **error**.
      * Base card exists but no variant → mark as **no-variants**.
    * If `V1` exists, continue checking sequentially (`V2` → `V5`).
    * Later, cards with `V5` are also checked for `V6`…`V9`.
 4. **Handle errors & rate limits** →
-
    * Random delays between requests to avoid bans.
    * On **429 Too Many Requests** → pause 60s and retry.
    * On **403 Forbidden** → pause 5min and retry.
 5. **Save results** → update these files:
-
    * `checked-cards.json` → full log of all scanned cards (including errors).
    * `variants-found.json` → only successful cards with variants.
    * `README.md` → automatically updated with the list of found variants.
