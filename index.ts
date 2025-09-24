@@ -248,7 +248,7 @@ async function updateReadme() {
     grouped[v.expansion].push(`${v.card}: ${parts.join(", ")}`);
   }
 
-  let section = "## Variants Found\n";
+  let section = "## 📂 Variants Found\n";
   for (const expansion of expansionOrder) {
     section += `\n### ${expansion}\n`;
     section += grouped[expansion].map(c => `- ${c}`).join("\n") + "\n";

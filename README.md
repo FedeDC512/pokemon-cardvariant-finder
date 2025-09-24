@@ -1,10 +1,58 @@
 # Pokemon Card Variant Finder
 
-se manca v2, ma è presente v3, viene reindirizzato a v3  
-card list from https://www.pokellector.com/
+This program scans Pokémon card sets from the _Scarlet & Violet_ era and and automatically finds alternative versions available on [**Cardmarket**](https://www.cardmarket.com/it/Pokemon).  
+At the end of this README you will find **all the Variants Found with links**, grouped by expansion. All the card expansions are sourced from [**Pokellector**](https://www.pokellector.com/).
+
+> ⏱ Last scan: 20 September 2025
+
+## ✨ Why I created this
+
+I made this program to automate the search for alternative Pokémon card variants, since checking them manually is time-consuming.
+With this tool, I can scan all expansions quickly, update only errors, and always keep a list of variants up to date.
+
+## 🚀 How to run
+
+1. Install [Bun](https://bun.sh) if you don’t have it already.
+
+2. Run the program:
+   ```bash
+   bun start
+   ```
+
+3. Use the menu to choose what you want to do:
+   * Full scan
+   * Retry failed cards
+   * Check for new variants
+   * Update the README
+
+## ⚙️ How it works
+
+The program combines **Pokellector expansions** (already stored in the repo) with **Cardmarket product pages** to detect alternative card versions:
+
+1. **Load expansions** → read JSON files exported from Pokellector.
+2. **Generate slugs** → format each card into a Cardmarket-compatible slug.
+3. **Check variants** →
+
+   * Try `V1` first.
+   * If `V1` doesn’t exist, check the **base card**.
+
+     * Missing base card → mark as **error**.
+     * Base card exists but no variant → mark as **no-variants**.
+   * If `V1` exists, continue checking sequentially (`V2` → `V5`).
+   * Later, cards with `V5` are also checked for `V6`…`V9`.
+4. **Handle errors & rate limits** →
+
+   * Random delays between requests to avoid bans.
+   * On **429 Too Many Requests** → pause 60s and retry.
+   * On **403 Forbidden** → pause 5min and retry.
+5. **Save results** → update these files:
+
+   * `checked-cards.json` → full log of all scanned cards (including errors).
+   * `variants-found.json` → only successful cards with variants.
+   * `README.md` → automatically updated with the list of found variants.
 
 <!-- VARIANTS_START -->
-## Variants Found
+## 📂 Variants Found
 
 ### Scarlet Violet Energies
 - Basic-Grass-Energy-SVE001: [Basic-Grass-Energy-V2-SVE001](https://www.cardmarket.com/en/Pokemon/Products/Singles/Scarlet-Violet-Energies/Basic-Grass-Energy-V2-SVE001), [Basic-Grass-Energy-V3-SVE001](https://www.cardmarket.com/en/Pokemon/Products/Singles/Scarlet-Violet-Energies/Basic-Grass-Energy-V3-SVE001)
@@ -305,3 +353,6 @@ card list from https://www.pokellector.com/
 ### Crown Zenith
 - Rayquaza-V-CRZ100: [Rayquaza-V-V2-CRZ100](https://www.cardmarket.com/en/Pokemon/Products/Singles/Crown-Zenith/Rayquaza-V-V2-CRZ100)
 <!-- VARIANTS_END -->
+
+---
+⚡ This project is still evolving, feel free to open an issue or contribute if you’d like to improve variant detection!
